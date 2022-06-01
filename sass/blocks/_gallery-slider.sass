@@ -1,0 +1,25 @@
+.gallery
+	padding-top: 100px
+	min-height: 600px
+	&__container
+		position: relative
+		overflow: hidden
+	&__wrapper
+		margin-top: 60px
+		height: 600px
+	&__slider
+		width: 40%
+		height: 100%
+		&_img
+			text-align: center
+			height: 100%
+			img
+				max-width: 100%
+				height: 100%
+	&__prev::after, &__next::after
+		color: $blue
+.swiper-scrollbar
+	background-color: #42d9d9
+	cursor: pointer
+	height: 3px
+	margin-top: 40px

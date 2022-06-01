@@ -1,0 +1,52 @@
+.price
+	padding-top: 100px
+	&__wrapper
+		width: 80%
+		margin: 0 auto
+		margin-bottom: 80px
+	&__content
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-top: 30px
+	&__descr
+		width: 35%
+		font-size: 14px
+		font-weight: 500
+	&__count
+		width: 55%
+		display: flex
+		justify-content: space-between
+	&__ticket
+		position: relative
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		width: 160px
+		height: 100px
+		background: rgba(255, 255, 255, 0.8)
+		box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1)
+		border-radius: 10px
+		@include circle
+		@include blur
+		&_value
+			font-size: 24px
+			font-weight: 700
+			color: $blue
+		&_descr
+			font-size: 14px
+			font-weight: 500
+	&__time
+		position: relative
+		display: flex
+		justify-content: center
+		align-items: center
+		gap: 10px
+		width: 160px
+		height: 100px
+		background: rgba(255, 255, 255, 0.8)
+		box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1)
+		border-radius: 10px
+		@include circle
+		@include blur
