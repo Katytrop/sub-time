@@ -41,10 +41,6 @@ new Swiper('.gallery__container', {
 		nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev"
 	},
-	scrollbar: {
-		el: ".swiper-scrollbar",
-		draggable: true
-	},
 	mousewheel: {
 		sensitivity: 1,
 		eventsTarget: ".gallery__container"
