@@ -85,32 +85,32 @@
                             <img src="assets/img/gallery/photo1.JPG" alt="photo">
                         </div>
                     </div>
-                    <div class="swiper-slide gallery__slide">
+                    <div class="swiper-slide gallery__slider">
                         <div class="gallery__slider_img">
                             <img src="assets/img/gallery/photo2.JPG" alt="photo">
                         </div>
                     </div>
-                    <div class="swiper-slide gallery__slide">
+                    <div class="swiper-slide gallery__slider">
                         <div class="gallery__slider_img">
                             <img src="assets/img/gallery/photo3.JPG" alt="photo">
                         </div>
                     </div>
-                    <div class="swiper-slide gallery__slide">
+                    <div class="swiper-slide gallery__slider">
                         <div class="gallery__slider_img">
                             <img src="assets/img/gallery/photo4.JPG" alt="photo">
                         </div>
                     </div>
-                    <div class="swiper-slide gallery__slide">
+                    <div class="swiper-slide gallery__slider">
                         <div class="gallery__slider_img">
                             <img src="assets/img/gallery/photo5.JPG" alt="photo">
                         </div>
                     </div>
-                    <div class="swiper-slide gallery__slide">
+                    <div class="swiper-slide gallery__slider">
                         <div class="gallery__slider_img">
                             <img src="assets/img/gallery/photo6.JPG" alt="photo">
                         </div>
                     </div>
-                    <div class="swiper-slide gallery__slide">
+                    <div class="swiper-slide gallery__slider">
                         <div class="gallery__slider_img">
                             <img src="assets/img/gallery/photo7.JPG" alt="photo">
                         </div>
@@ -136,38 +136,6 @@
 
     <section id="price" class="price">
         <div class="container">
-            <!-- <div class="price__wrapper">
-                <div class="price__content">
-                    <div class="title title_price">Прогулка по реке Уча в Пушкино</div>
-                    <div class="price__descr">Узкие берега и меняющиеся пейзажи в черте города вам точно понравятся!</div>
-                </div>    
-                <div class="price__count">
-                    <div class="price__ticket">
-                        <div class="price__ticket_value">900 p</div>
-                    </div>
-                    <div class="price__time">
-                        <img src="assets/icons/time.svg" alt="time">
-                        <div class="price__ticket_value">1,5 - 2 часа</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="price__wrapper">
-                <div class="price__content">
-                    <div class="title title_price">Прогулка по реке Уча в Ивантеевке</div>
-                    <div class="price__descr">Маленькие домики по берегам, высокие деревья,узкие берега,  это невозможно пропустить</div>
-                </div>    
-                <div class="price__count">
-                    <div class="price__ticket">
-                        <div class="price__ticket_descr">Цена</div>
-                        <div class="price__ticket_value">900 p</div>
-                    </div>
-                    <div class="price__time">
-                        <img src="assets/icons/time.svg" alt="time">
-                        <div class="price__ticket_value"> 1,5 - 2 часа</div>
-                    </div>
-                </div>
-            </div> -->
             <div class="title title_price">Наши направления</div>
             <div class="price__wrapper">
                 <div class="price__item">
@@ -212,25 +180,34 @@
                 </div>   
             </div>
             <button class="btn btn_price">Забронировать</button>
-        </div>
-    </section>
-
-<!--     <section id="order" class="order">
-        <div class="container">
-            <div class="order__wrapper">
-                <img class="order__photo" src="assets/img/order.jpg" alt="photo">
-                <div class="order__content">
-                    <div class="title title_order">Забронировать прогулку</div>
-                    <form>
-                        <input class="order__input order__input_data" type="date" placeholder="Выберите дату">
-                        <input class="order__input order__input_people" type="text" placeholder="Количество взрослых">
-                        <input class="order__input order__input_people" type="text" placeholder="Количество детей">
-                        <button class="btn btn_order">Забронировать</button>
+            <div class="price__modal">
+                <div class="price__modal_content">
+                    <div class="title title_modal">Записаться на прогулку:</div>
+                    <form action="mailto:sup_time_pushkino@mail.ru" method="post" name="order">
+                        <label for="date">Дата</label>
+                        <input type="date" id="date" name="date" required>
+                        <label for="tour">Выберите из списка</label>
+                        <select name="tour" id="tour" required>
+                            <option></option>
+                            <option>Прогулка по реке Уча в Пушкино</option>
+                            <option>Прогулка по реке Уча в Ивантеевке</option>
+                            <option>Прогулка в Тишково по водохранилищу</option>
+                            <option>Прогулка по реке Серебрянка в Пушкино</option>
+                        </select>
+                        <label for="people">Сколько вас будет?</label>
+                        <input type="number" id="people" min="1" max="10" step="1" required>
+                        <label for="name">Как вас зовут?</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="tel">Ваш номер телефона</label>
+                        <input required name="tel" id="tel" type="tel" data-reg="^((\+7|7|8)+([0-9]){10})$">
+                        <input class="btn btn_modal" type="submit" value="Отправить">
                     </form>
+                    <div class="btn btn_close">X</div>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
+
 
     <section class="callback">
         <div class="container">
