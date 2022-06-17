@@ -45,35 +45,40 @@ new Swiper('.gallery__container', {
 		sensitivity: 1,
 		eventsTarget: ".gallery__container"
 	},
-	slidesPerView: 3, //количество слайдов
+	slidesPerView: 4, //количество слайдов
 	slidesPerGroup: 1, // количество перелистываемых слайдов
 	speed: 800,
 	effect: 'coverflow',
 	coverflowEffect: {
 		rotate: 30,
 		stretch: 50,
-		slideShadows: true
+		slideShadows: false
 	},
 	breakpoints: {
 		320: {
 			slidesPerView: 1
 		},
-		480: {
+		576: {
 			slidesPerView: 2
 		},
 		768: {
 			slidesPerView: 3
+		},
+		1200: {
+			slidesPerView: 4
 		}
 	},
+	centeredSlides: true,
+	initialSlide: 2,
 	//spaceBetween: 30, // растояние между слайдами
-	//centeredSlides: true, 
-	//loop: false, // бесконечная прокрутка, лучше отключить скролл снизу
-	//loopedSlides: 1, // для бесконечной прокрутки
+	 
+	loop: true, // бесконечная прокрутка, лучше отключить скролл снизу
+	loopedSlides: 2 // для бесконечной прокрутки
 	/* autoplay: {
 		delay: 1000,
 		disableOnInteraction: false, //отключить после ручного переключения
 		stopOnLastSlide: true // закончить на последнем
-	}, */
+	} */
 	/* effect: 'flip',
 	flipEffect: {
 		slideShadows: true,

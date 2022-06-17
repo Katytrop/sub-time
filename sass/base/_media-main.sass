@@ -7,29 +7,210 @@
 		&__wrapper
 			padding: 0 40px
 			padding-top: 135px
-	.calendar
+	.kinds
 		&__wrapper
-			padding-right: 0	
+			grid-template: 210px 150px / repeat(2, 500px)
 	.footer
 		&__wrapper
 			padding: 0 60px
-
 @media (max-width: 1201px)
 	.container 
 		max-width: 990px
-
+	.promo
+		padding-bottom: 100px
+		&__wrapper
+			padding-top: 65px
+		&__title
+			font-size: 60px
+		&__subtitle
+			font-size: 25px
+			top: 48px
+			right: 14px
+		&__social
+			margin-top: 20px
+	h1
+		font-size: 75px
+	.kinds
+		&__wrapper
+			grid-template: 230px 190px / repeat(2, 420px)
+	.price
+		&__wrapper
+			grid-template: repeat(2, 550px) / repeat(2, 420px)
 @media (max-width: 992px)
 	.container 
 		max-width: 769px
+	.promo
+		&__logo
+			img
+				width: 75px
+				height: 75px
+		&__link
+			a
+				font-size: 14px
+		&__title
+			font-size: 45px
+		&__subtitle
+			font-size: 20px
+			top: 35px
+			right: 72px
+	h1
+		font-size: 60px
+		margin-left: 100px
+	.btn
+		margin-top: 30px
+	.title
+		&_kinds-item
+			font-size: 22px
+	.kinds
+		&__wrapper
+			grid-template: 220px 190px / repeat(2, 340px)
+		&__item
+			&_descr
+				font-size: 12px
+	.price
+		&__wrapper
+			grid-template: repeat(2, 450px) / repeat(2, 300px)
+		&__item
+			&_title, &_descr
+				margin-top: 25px
+		&__value
+			margin-top: 25px
+	table td
+		font-size: 11px
+	.callback
+		&__content
+			width: 400px
+		&__title
+			font-size: 21px
+		&__input
+			width: 250px
 
 @media (max-width: 768px)
 	.container 
 		max-width: 570px
-
+	.promo
+		height: 100vh
+		&__wrapper
+			padding-top: 150px
+		&__menu
+			display: none
+		&__video
+			display: none
+		&__video-mini
+			display: block
+		&__title
+			font-size: 45px
+		&__subtitle
+			font-size: 25px
+			top: 40px
+			right: 0
+		&__social
+			margin-top: 0
+			a
+				img
+					width: 25px
+					height: 25px
+	h1
+		font-size: 55px
+		margin-left: 60px
+		margin-top: -5px
+	.btn
+		margin-top: 100px
+		&_promo
+			width: 200px
+			height: 40px
+		&_price
+			margin-top: 50px
+	.kinds
+		&__wrapper
+			grid-template: 150px / 400px
+			grid-auto-rows: auto
+			grid-auto-columns: auto
+		&__item
+			&_descr
+				font-size: 12px
+	.price
+		&__wrapper
+			grid-template-rows: 460px
+			grid-template-columns: 400px
+			grid-auto-rows: 460px
+	table td, table tr
+		font-size: 10px
+		width: 100px
+	table th
+		font-size: 11px
 @media (max-width: 576px)
 	.container 
 		max-width: 420px
+	.promo
+		&__wrapper
+			padding-top: 150px
+		&__title
+			font-size: 36px
+		&__subtitle
+			font-size: 25px
+			top: 26px
+			right: -17px
+		&__social
+			margin-top: -50%
+	h1
+		font-size: 45px
+	.title
+		&_kinds
+			font-size: 38px
+		&_kinds-item
+			font-size: 18px
+	.kinds
+		&__wrapper
+			grid-template: 150px / 320px
+	.titles__block
+		padding: 0
+	table
+		display: none
 
 @media (max-width: 421px)
 	.container 
 		max-width: 320px
+	.promo
+		&__wrapper
+			padding-top: 100px
+		&__title
+			font-size: 24px
+		&__subtitle
+			font-size: 20px
+			top: 17px
+			right: -17px
+	h1
+		font-size: 33px	
+		margin-left: 30px	
+		margin-top: 0
+	.title
+		&_kinds-item
+			font-size: 14px
+	.subtitle
+		font-size: 14px
+	.btn
+		&_callback
+			margin-top: 30px
+			width: 200px
+			height: 40px
+	.kinds
+		&__wrapper
+			grid-template: 175px / 240px
+		&__item
+			&_descr
+				font-size: 11px
+	.price
+		&__wrapper
+			grid-template-rows: 460px
+			grid-template-columns: 300px
+			grid-auto-rows: 460px
+	.callback
+		&__content
+			width: 270px
+			padding: 20px
+		&__title
+			font-size: 18px
+			margin-top: 100px
+		&__input
+			width: 200px
