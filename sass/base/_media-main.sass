@@ -36,6 +36,9 @@
 	.price
 		&__wrapper
 			grid-template: repeat(2, 550px) / repeat(2, 420px)
+	.footer
+		&__wrapper
+			padding: 0
 @media (max-width: 992px)
 	.container 
 		max-width: 769px
@@ -84,6 +87,9 @@
 			font-size: 21px
 		&__input
 			width: 250px
+	.footer
+		&__content
+			gap: 50px
 
 @media (max-width: 768px)
 	.container 
@@ -139,6 +145,12 @@
 		width: 100px
 	table th
 		font-size: 11px
+	.footer
+		&__content
+			width: 100%
+			justify-content: space-between
+			&:nth-child(1)
+				display: none
 @media (max-width: 576px)
 	.container 
 		max-width: 420px
