@@ -1,7 +1,7 @@
 .timetable
 	padding-top: 100px
 	&__wrapper
-		margin-top: 65px
+		margin-top: 50px
 		position: relative
 	&__event
 		position: absolute
@@ -21,28 +21,22 @@
 			margin-top: 15px
 table
 	margin: 0 auto
-	margin-bottom: 20px
 	border: 5px solid #fff
 	border-bottom: 3px solid #fff
-	border-collapse: collapse
+	//border-collapse: collapse
 	outline: 3px solid $orange
-	font-size: 15px
-	background: #fff!important
 	text-align: center
 table td
-	padding: 12px
+	padding: 15px
 	border: 1px solid $blue
-	width: 160px
+	width: 500px
 	font-size: 15px
-table th
-	font-weight: bold
-	padding: 7px
-	background: $orange
-	border: none
-	text-align: left
-	font-size: 15px
-	border-top: 3px solid #fff
-	border-bottom: 3px solid $orange
-	text-align: center
-table tbody tr:nth-child(even)
+table tbody tr:nth-child(odd)
 	background: #caeeee!important
+.day
+	font-size: 20px
+.table-mini
+	display: none
+	font-size: 15px
+	& td
+		width: 410px
