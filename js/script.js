@@ -113,3 +113,12 @@ const showMenu = () => {
 	});
 };
 hamburger.addEventListener('click', showMenu);
+
+// mask
+let inputTel = document.querySelector('input[type="tel"]');
+let im = new Inputmask('+7 (999) 999-99-99');
+im.mask(inputTel);
+// mask2
+let inputTel2 = document.querySelector('.callback__input_tel');
+let imask = new Inputmask('+7 (999) 999-99-99');
+imask.mask(inputTel2);

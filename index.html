@@ -15,7 +15,7 @@
 <body>
      
     <section id="up" class="promo">
-        <video class="promo__video" autoplay muted loop src="assets/video/video-main.MOV"></video>
+        <video class="promo__video" autoplay muted loop src="assets/video/video-main.mp4"></video>
         <div class="promo__photo"></div>
         <div class="container">
             <header class="header">
@@ -28,7 +28,7 @@
                         <li class="promo__link"><a href="#price">Цены</a></li>
                         <li class="promo__link"><a href="./gallery.html">Галерея</a></li>
                         <li class="promo__link"><a href="./faq.html">FAQ</a></li>
-                        <li class="promo__link promo__link_active"><a href="#order">Забронировать</a></li>
+                        <li class="promo__link promo__link_active"><a href="#price">Забронировать</a></li>
                     </ul>
                 </nav>
             </header>
@@ -338,7 +338,7 @@
                     <div class="callback__subtitle">Оставь заявку и мы ответим</div>
                     <form class="callback__forma">
                         <input class="callback__input" required placeholder="Имя" type="name">
-                        <input class="callback__input" required placeholder="Телефон" type="tel">
+                        <input class="callback__input callback__input_tel" required placeholder="Телефон" type="tel">
                         <input class="callback__input" required placeholder="Почта" type="email">
                         <button class="btn btn_callback">Оставить заявку</button>
                     </form>
@@ -364,21 +364,23 @@
                 </div>
                 <div class="footer__content">
                     <div class="footer__contacts">
-                        <div class="footer__number"><img src="assets/icons/watsApp-mini.svg" alt="watsapp">
-                            +7 925 020 4102</div>
-                        <div class="footer__number"><img src="assets/icons/telegram-mini.svg" alt="telegram">
+                        <a href="tel:+79250204102" class="footer__number">
+                            <img src="assets/icons/watsApp-mini.svg" alt="watsapp">
+                            +7 925 020 4102</a>
+                        <a href="https://t.me/sup_time_pushkino" class="footer__number">
+                            <img src="assets/icons/telegram-mini.svg" alt="telegram">
                             sup_time_pushkino
-                        </div>
-                        <div class="footer__mail"><img src="assets/icons/mail.svg" alt="mail">
+                        </a>
+                        <a href="mailto:sup_time_pushkino@mail.ru" class="footer__mail">
+                            <img src="assets/icons/mail.svg" alt="mail">
                             sup_time_pushkino@mail.ru  
-                        </div>
+                        </a>
                     </div>
                     <div class="footer__social">
-                        
                         <div class="footer__social_links">
-                            <img src="assets/icons/vk-color.svg" alt="vk">
-                            <img src="assets/icons/telegram-color.svg" alt="telegram">
-                            <img src="assets/icons/whatsapp-color.svg" alt="whatsapp">
+                            <a target="blank" href="https://vk.com/sup_time_pushkino"><img src="assets/icons/vk-color.svg" alt="vk"></a>
+                            <a target="blank" href="https://t.me/sup_time_pushkino"><img src="assets/icons/telegram-color.svg" alt="telegram"></a>
+                            <a target="blank" href="https://wa.me/79250204102"><img src="assets/icons/whatsapp-color.svg" alt="whatsapp"></a>
                         </div>
                     </div>
                 </div>
@@ -393,6 +395,7 @@
 		247.8 144 256 144s16.38 3.125 22.62 9.375l112 112C403.1 277.9 403.1 298.1 390.6 310.6z"/></svg>
 	</a>
 
+    <script src="js/inputmask.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
     
