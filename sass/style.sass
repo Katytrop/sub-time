@@ -27,6 +27,38 @@ body
 	font-size: 18px
 	font-weight: 500
 
+.hamburger
+	position: absolute
+	top: 30px
+	right: 30px
+	height: 30px
+	display: none
+	flex-direction: column
+	justify-content: space-between
+	align-items: flex-end
+	z-index: 100
+	span
+		position: absolute
+		display: block
+		width: 40px
+		height: 3px
+		background: #fff
+		transition: 0.5s all
+	span.short
+		top: -10px
+		&.active
+			transform: rotate(45deg)
+			top: 0
+	span.short2
+		top: 10px
+		&.active
+			transform: rotate(-45deg)
+			top: 0
+	span.long 
+		width: 45px
+		&.active
+			display: none
+
 @import 'blocks/_promo'
 @import 'blocks/_buttons'
 @import 'blocks/_titles'

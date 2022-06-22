@@ -120,11 +120,9 @@
 		height: 100vh
 		&__wrapper
 			padding-top: 250px
-		&__menu
-			display: none
 		&__video
 			display: none
-		&__video-mini
+		&__photo
 			display: block
 		&__title
 			font-size: 45px
@@ -138,6 +136,26 @@
 				img
 					width: 25px
 					height: 25px
+		&__menu
+			display: none
+			position: absolute
+			top: 0
+			right: 0
+			width: 85%
+			height: 100vh
+			background: $blue
+			z-index: 10
+			&.active
+				display: flex
+				flex-direction: column
+				align-items: flex-start
+				justify-content: center
+		&__link
+			margin-bottom: 25px
+			a
+				font-size: 18px
+	.hamburger
+		display: flex
 	h1
 		font-size: 55px
 		margin-left: 60px
@@ -232,7 +250,6 @@
 		max-width: 320px
 	.promo
 		padding-bottom: 0
-		height: 85vh
 		&__wrapper
 			padding-top: 150px
 		&__title
