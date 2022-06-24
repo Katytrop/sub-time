@@ -5,7 +5,8 @@ $orange: #FFC700
 	margin: 0
 	padding: 0
 	font-family: 'Montserrat', sans-serif
-	font-size: 14px
+	font-size: 20px
+	font-weight: 500
 a
 	text-decoration: none
 	color: $blue
@@ -15,8 +16,8 @@ li
 	margin: 0 auto
 	width: 1400px
 .header
-	height: 80px
-	padding: 20px 0	
+	height: 100px
+	padding: 30px 0
 	&__wrapper
 		padding: 0 60px
 		display: flex
@@ -24,12 +25,45 @@ li
 		align-items: center
 	&__logo
 		img
-			width: 80px
-			height: 80px
+			width: 100px
+			height: 100px
 	&__menu
 		display: flex
 		justify-content: space-between
 		width: 600px
+.hamburger
+	position: absolute
+	top: 11%
+	right: 10%
+	height: 30px
+	display: none
+	flex-direction: column
+	justify-content: space-between
+	align-items: flex-end
+	z-index: 100
+	span
+		position: absolute
+		display: block
+		width: 40px
+		height: 3px
+		background: $blue
+		transition: 0.5s all
+	span.short
+		top: -15px
+		&.active
+			transform: rotate(45deg)
+			top: 0
+			background: #fff
+	span.short2
+		top: 15px
+		&.active
+			transform: rotate(-45deg)
+			top: 0
+			background: #fff
+	span.long 
+		width: 45px
+		&.active
+			display: none
 .gallery
 	padding: 50px 0
 	&__title
@@ -62,7 +96,7 @@ li
 		align-items: center
 		gap: 110px
 	&__photo
-		width: 80px
+		width: 100px
 		height: 100px
 		img
 			width: 100%
@@ -74,7 +108,10 @@ li
 		a
 			text-decoration: none
 			color: #000
-	&__number
+	&__contacts
+		display: flex
+		flex-direction: column
+	&__number, &__mail
 		margin-bottom: 6px
 		img
 			margin-right: 5px
@@ -87,4 +124,5 @@ li
 			align-items: center
 			img
 				margin-right: 10px
-	
+
+@import 'base/_media-gallery'

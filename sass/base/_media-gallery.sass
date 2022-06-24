@@ -1,0 +1,96 @@
+@media (max-width: 1421px)
+	.container 
+		max-width: 1200px
+	.gallery
+		&__wrapper
+			grid-template: repeat(5, 370px)/repeat(4, 280px)
+			gap: 25px
+	.footer
+		&__wrapper
+@media (max-width: 1201px)
+	.container 
+		max-width: 990px
+	.gallery
+		&__wrapper
+			grid-template: repeat(6, 370px)/repeat(3, 280px)
+	.footer
+		&__wrapper
+			padding: 0
+
+@media (max-width: 992px)
+	.container 
+		max-width: 769px
+	.header
+		&__wrapper
+			padding: 0 20px
+		&__menu
+			width: 550px
+		&__link
+			a
+				font-size: 18px
+	.gallery
+		&__wrapper
+			grid-template: repeat(6, 320px)/repeat(3, 230px)
+	.footer
+		&__nav
+			display: none
+	
+@media (max-width: 768px)
+	.container 
+		max-width: 570px
+	.header
+		&__wrapper
+			padding: 0 35px
+		&__menu
+			display: none
+			position: absolute
+			top: 0
+			right: 0
+			width: 85%
+			height: 100vh
+			background: $blue
+			z-index: 10
+			&.active
+				display: flex
+				flex-direction: column
+				align-items: center
+				justify-content: center
+		&__link
+			margin-top: 25px
+			a
+				color: #fff
+	.hamburger
+		display: flex
+		top: 75px
+	.gallery
+		&__wrapper
+			grid-template: repeat(10, 320px)/repeat(2, 230px)
+			gap: 30px
+	.footer
+		&__photo
+			display: none
+@media (max-width: 576px)
+	.container 
+		max-width: 420px
+	.header
+		&__wrapper
+			padding: 0
+	.gallery
+		&__wrapper
+			grid-template: repeat(10, 400px)/repeat(1, 300px)
+	.footer
+		&__content
+			gap: 60px
+		&__contacts
+			a
+				font-size: 14px
+
+@media (max-width: 421px)
+	.container 
+		max-width: 319px
+	.footer
+		&__wrapper
+			justify-content: center
+		&__content
+			flex-direction: column
+			gap: 15px
