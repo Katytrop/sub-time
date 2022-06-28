@@ -18,10 +18,13 @@
 		cursor: pointer
 		font-size: 26px
 	&__answer
+		padding: 0 40px
 		max-height: 0
 		overflow: hidden
 		margin-top: 10px
-		transition: max-height 0.2s ease-out
+		transition:  all 0.5s ease-out
+		&.active
+			max-height: 200px
 	&__icon
 		background-image: url(../assets/icons/up.svg)
 		width: 30px
@@ -29,5 +32,6 @@
 		border-radius: 100%
 		position: absolute
 		transform: rotate(180deg)
-		&active
+		transition:  all 0.5s ease-out
+		&.active
 			transform: rotate(360deg)

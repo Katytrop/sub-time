@@ -82,6 +82,8 @@
 		margin-top: -17px
 	.btn
 		margin-top: 30px
+		&_prev, &_next
+			top: 20%
 	.title
 		font-size: 38px
 		&_kinds-item
@@ -117,14 +119,12 @@
 		&__wrapper
 			padding: 0 20px
 		&__question
-			font-size: 18px
-	.callback
-		&__content
-			width: 400px
-		&__title
-			font-size: 21px
-		&__input
-			width: 250px
+			font-size: 20px
+		&__answer
+			font-size: 16px
+	.feed
+		&__slider
+			max-width: 600px
 	.footer
 		&__wrapper
 			padding: 0 20px
@@ -207,6 +207,14 @@
 			margin-top: 50px
 		&_close
 			margin-top: 40px
+		&_prev, &_next
+			bottom: -25%
+			top: auto
+		&_prev
+			left: 30%
+		&_next
+			right: 30%
+
 	.kinds
 		&__wrapper
 			grid-template: 150px / 400px
@@ -226,13 +234,16 @@
 	table td, table tr
 		width: 250px
 	.title
-		&_faq
+		&_faq, &_feed
 			font-size: 32px
 	.faq
 		&__wrapper
 			width: 100%
-		&__question
-			font-size: 20px
+	.feed
+		padding-bottom: 50px
+		&__slider
+			max-width: 450px
+			height: 300px
 	.footer
 		&__wrapper
 			padding: 0
@@ -300,9 +311,17 @@
 		display: none
 	.table-mini
 		display: block
+	.feed
+		&__slider
+			max-width: 330px
+		&__item
+			&_descr
+				font-size: 14px
 	.faq
 		&__question
 			font-size: 18px
+		&__answer
+			font-size: 15px
 	.footer
 		&__content
 			font-size: 14px
@@ -372,6 +391,8 @@
 			padding: 0
 		&__question
 			font-size: 15px
+		&__answer
+			font-size: 12px
 	.footer
 		&__content
 			font-size: 11px

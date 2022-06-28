@@ -15,6 +15,7 @@ for (let smoothLink of smoothLinks) {
 // button up
 const btnUp = document.querySelector('.pageup');
 
+
 function trackScroll() {
 	const scrolled = window.pageYOffset;
 	const coords = document.documentElement.clientHeight;
@@ -114,6 +115,57 @@ const showMenu = () => {
 };
 hamburger.addEventListener('click', showMenu);
 
+// faq
+const questions = document.querySelectorAll('.faq__question');
+
+console.log(questions);
+for(let i = 0; i < questions.length; i++ ) {
+	questions[i].addEventListener('click', function() {
+		let answer = this.nextElementSibling;
+		let icon = this.previousElementSibling;
+        if (answer.style.maxHeight) {
+            answer.style.maxHeight = null;
+        } else {
+            answer.classList.toggle('active');
+			icon.classList.toggle('active');
+        }
+	});
+}
+
+//feed
+const prev = document.querySelector('.btn_prev');
+const next = document.querySelector('.btn_next');
+const slides = document.querySelectorAll('.feed__item');
+let index = 0;
+
+const activeSlide = n => {
+	for(let slide of slides) {
+		slide.classList.remove('active');
+	}
+	slides[n].classList.add('active');
+};
+const nextSlide = () => {
+	if(index == slides.length -1) { // если слайд последний
+		index = 0;
+		activeSlide(index);
+	} else {
+		index++;
+		activeSlide(index);
+	}
+};
+next.addEventListener('click', nextSlide);
+
+const prevSlide = () => {
+	if(index == 0) { // если слайд первый
+		index = slides.length -1;
+		activeSlide(index);
+	} else {
+		index--;
+		activeSlide(index);
+	}
+};
+prev.addEventListener('click', prevSlide);
+
 // mask
 let inputTel = document.querySelector('input[type="tel"]');
 let im = new Inputmask('+7 (999) 999-99-99');
@@ -122,18 +174,3 @@ im.mask(inputTel);
 let inputTel2 = document.querySelector('.callback__input_tel');
 let imask = new Inputmask('+7 (999) 999-99-99');
 imask.mask(inputTel2);
-
-// faq
-let questions = document.querySelectorAll('.faq__question');
-/* 
-for(let i = 0; i < questions.length; i++) {
-    questions[i].addEventListener('click', function() {
-        //this.classList.toggle('active');
-        let answer = this.nextElementSibling;
-        if (answer.style.maxHeight) {
-            answer.style.maxHeight = null;
-        } else {
-            answer.style.maxHeight = answer.scrollHeight + 'px';
-        }
-    });
-} */
