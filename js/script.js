@@ -88,7 +88,7 @@ new Swiper('.gallery__container', {
 	
 });
 
-// modal
+/* // modal
 const orderBtn = document.querySelector('.btn_price');
 const closeBtn = document.querySelector('.btn_close');
 const modal = document.querySelector('.price__modal');
@@ -100,7 +100,7 @@ orderBtn.addEventListener('click', showModal);
 const closeModal = () => {
     modal.classList.remove('active');
 };
-closeBtn.addEventListener('click', closeModal);
+closeBtn.addEventListener('click', closeModal); */
 
 // burger
 const hamburger = document.querySelector('.hamburger');
