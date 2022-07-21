@@ -1,0 +1,37 @@
+.faq
+	padding: 50px 0
+	&__wrapper
+		position: relative
+		padding: 0 100px
+		margin: 0 auto
+		width: 90%
+	&__title
+		text-align: center
+		font-size: 26px
+		margin-bottom: 50px
+	&__item
+		margin-top: 25px
+	&__question
+		margin-top: 20px
+		padding-left: 40px
+		position: relative
+		cursor: pointer
+		font-size: 26px
+	&__answer
+		padding: 0 40px
+		max-height: 0
+		overflow: hidden
+		margin-top: 10px
+		transition:  all 0.5s ease-out
+		&.active
+			max-height: 200px
+	&__icon
+		background-image: url(../assets/icons/up.svg)
+		width: 30px
+		height: 30px
+		border-radius: 100%
+		position: absolute
+		transform: rotate(180deg)
+		transition:  all 0.5s ease-out
+		&.active
+			transform: rotate(360deg)

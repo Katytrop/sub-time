@@ -1,0 +1,31 @@
+.titles__block
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding: 0 40px
+.title
+	font-weight: 700
+	font-size: 36px
+	color: $blue
+	&_kinds
+		text-align: center
+		font-size: 42px
+		&-item
+			position: relative
+			font-size: 26px
+			text-transform: uppercase
+			&::before
+				content: ""
+				position: absolute
+				top: -22px
+				left: -32px
+				width: 70px
+				height: 70px
+				border-radius: 100%
+				background-color: $orange
+				z-index: -1
+	&_price, &_table, &_faq, &_feed
+		text-align: center
+	&_modal
+		font-size: 24px
+		margin-bottom: 20px

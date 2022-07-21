@@ -1,0 +1,102 @@
+.promo
+	padding: 50px 0 200px 0
+	position: relative
+	overflow: hidden
+	height: 100%
+	width: 100%
+	&__video
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		z-index: -1
+	&__photo
+		display: none
+		position: absolute
+		top: 0
+		left: 0
+		background: url(../assets/img/main.jpg) center center/cover no-repeat
+		height: 100vh
+		width: 100%
+		z-index: -1
+	&__logo
+		img
+			width: 100px
+			height: 100px
+	&__menu
+		display: flex
+		justify-content: space-between
+	&__link
+		margin-left: 45px
+		list-style: none
+		a
+			text-decoration: none
+			color: #fff
+			font-size: 20px
+			font-weight: 700
+			&:hover
+				color: $orange
+		&_active
+			a
+				color: $orange
+				text-transform: uppercase
+				font-weight: 700
+				&:hover
+					color: $blue
+	&__wrapper
+		position: relative
+		padding: 0 140px
+		padding-top: 154px
+		display: flex
+		justify-content: space-between
+	&__descr
+		position: relative
+	&__title
+		font-weight: 700
+		font-size: 72px
+		color: #fff
+		text-transform: uppercase
+	&__subtitle
+		position: absolute
+		top: 53px
+		right: 38px
+		font-family: 'Lobster', cursive
+		font-weight: 400
+		font-size: 39px
+		color: $orange
+	&__comment
+		position: absolute
+		bottom: 0
+		right: 10%
+		color: $orange
+		font-size: 25px
+	&__social
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		height: 110px
+		margin-top: 40px
+		a
+			display: flex
+			justify-content: center
+			align-items: center
+			img
+				width: 35px
+				height: 35px
+				fill: #fff
+				&:hover
+					fill: $orange
+h1
+	font-family: 'Roboto', sans-serif
+	font-weight: 900
+	font-size: 96px
+	text-transform: uppercase
+	-webkit-text-fill-color: transparent
+	-webkit-text-stroke: 2px #fff
+	margin-top: -26px
+	margin-left: 180px
+.header
+	padding: 0 140px
+	display: flex
+	justify-content: space-between
+	align-items: center

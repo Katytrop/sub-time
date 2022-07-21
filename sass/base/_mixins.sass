@@ -1,0 +1,23 @@
+@mixin circle
+	&::before
+		content: ""
+		position: absolute
+		top: -20px
+		left: -20px
+		width: 55px
+		height: 55px
+		border-radius: 100%
+		background: $orange
+		z-index: -10
+@mixin blur
+	&::after
+		content: ""
+		position: absolute
+		top: 0px
+		left: 0px
+		width: 55px
+		height: 55px
+		background: #fff
+		filter: blur(16px)
+		z-index: -1
+	
